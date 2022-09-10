@@ -22,7 +22,8 @@ class ChessBoard: def init(self, size=CHESS_BOARD_SIZE): self._size = size self.
 ## :encapsulate common functionality of all chess pieces.
 
 class Piece(ABC): BLACK = "black" WHITE = "white"
-class PieceFactory: @staticmethod def create(piece_type: str, position: ChessPosition, color): if piece_type == PieceType.KING: return King(position, color)
+class PieceFactory: @staticmethod def create(piece_type: str, position: ChessPosition, color): 
+if piece_type == PieceType.KING: return King(position, color)
 
 ## :To encapsulate King as a chess piece.
 
