@@ -1,4 +1,4 @@
-# Chess
+# Chess (Hitwicket Assignment)
 
 A chessboard, which is a checkered gameboard with 64 squares organised in an 88 grid, is used to play the two-player strategic board game of chess. People play a select few different game genres all across the world. We're going to concentrate on creating a two-player online chess game for this design challenge. The top use cases' code is provided here.
 
