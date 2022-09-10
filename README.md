@@ -11,13 +11,13 @@ Steps Required (All files are upload seperately)--------------------
 
 ## :enums, data types, and constants
 
-#### from copy import deepcopy from .pieces import Piece, PieceFactory from .moves import ChessPosition, MoveCommand from .constants import CHESS_BOARD_SIZE, INITIAL_PIECE_SET_SINGLE, PieceType
+ from copy import deepcopy from .pieces import Piece, PieceFactory from .moves import ChessPosition, MoveCommand from .constants import CHESS_BOARD_SIZE, INITIAL_PIECE_SET_SINGLE, PieceType
 
-#### class ChessBoard: def init(self, size=CHESS_BOARD_SIZE): self._size = size self._pieces = [] self._white_king_position = None self._black_king_position = None self._initialize_pieces(INITIAL_PIECE_SET_SINGLE)
+ class ChessBoard: def init(self, size=CHESS_BOARD_SIZE): self._size = size self._pieces = [] self._white_king_position = None self._black_king_position = None self._initialize_pieces(INITIAL_PIECE_SET_SINGLE)
 
 ## :encapsulate a cell on chess board.
 
-#### class ChessBoard: def init(self, size=CHESS_BOARD_SIZE): self._size = size self._pieces = [] self._white_king_position = None self._black_king_position = None self._initialize_pieces(INITIAL_PIECE_SET_SINGLE)
+class ChessBoard: def init(self, size=CHESS_BOARD_SIZE): self._size = size self._pieces = [] self._white_king_position = None self._black_king_position = None self._initialize_pieces(INITIAL_PIECE_SET_SINGLE)
 
 ## :encapsulate common functionality of all chess pieces.
 
@@ -69,7 +69,7 @@ class ChessGame: STATUS_WHITE_MOVE = "white_move" STATUS_BLACK_MOVE = "black_mov
  from .moves import ChessPosition
  class InputRender: def render(self, game_state): raise NotImplementedError
 
-#### class ConsoleRender(InputRender): def render(self, game): for i in reversed(range(0, game.board_size)): self._draw_board_line(i, game.pieces, game.board_size) self._draw_bottom_line(game.board_size)
+class ConsoleRender(InputRender): def render(self, game): for i in reversed(range(0, game.board_size)): self._draw_board_line(i, game.pieces, game.board_size) self._draw_bottom_line(game.board_size)
 
 ## :To encapsulate a chess player.
 
