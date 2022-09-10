@@ -1,4 +1,4 @@
-## Chess (Hitwicket Assignment)
+# Chess (Hitwicket Assignment)
 
 A chessboard, which is a checkered gameboard with 64 squares organised in an 88 grid, is used to play the two-player strategic board game of chess. People play a select few different game genres all across the world. We're going to concentrate on creating a two-player online chess game for this design challenge. The top use cases' code is provided here.
 
@@ -9,13 +9,13 @@ Two players should be able to play chess online on the system. There will be adh
 
 Steps Required (All files are upload seperately)--------------------
 
-## :enums, data types, and constants
+# :enums, data types, and constants
 
 #### from copy import deepcopy from .pieces import Piece, PieceFactory from .moves import ChessPosition, MoveCommand from .constants import CHESS_BOARD_SIZE, INITIAL_PIECE_SET_SINGLE, PieceType
 
 #### class ChessBoard: def init(self, size=CHESS_BOARD_SIZE): self._size = size self._pieces = [] self._white_king_position = None self._black_king_position = None self._initialize_pieces(INITIAL_PIECE_SET_SINGLE)
 
-# :encapsulate a cell on chess board.
+## :encapsulate a cell on chess board.
 
 #### class ChessBoard: def init(self, size=CHESS_BOARD_SIZE): self._size = size self._pieces = [] self._white_king_position = None self._black_king_position = None self._initialize_pieces(INITIAL_PIECE_SET_SINGLE)
 
