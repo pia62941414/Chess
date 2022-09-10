@@ -66,7 +66,8 @@ class MoveCommand: def init(self, src: ChessPosition, dst: ChessPosition): self.
 
 class ChessGameState: def init(self, pieces, board_size): 
 self.pieces = pieces self.board_size = board_size
-class ChessGame: STATUS_WHITE_MOVE = "white_move" STATUS_BLACK_MOVE = "black_move" STATUS_WHITE_VICTORY = "white_victory" STATUS_BLACK_VICTORY = "black_victory"
+class ChessGame: 
+STATUS_WHITE_MOVE = "white_move" STATUS_BLACK_MOVE = "black_move" STATUS_WHITE_VICTORY = "white_victory" STATUS_BLACK_VICTORY = "black_victory"
 
 ## :To encapsulate a chess render.
 
@@ -74,7 +75,8 @@ class ChessGame: STATUS_WHITE_MOVE = "white_move" STATUS_BLACK_MOVE = "black_mov
  class InputRender: def render(self, game_state): raise NotImplementedError
 
 class ConsoleRender(InputRender): def render(self, game): 
-for i in reversed(range(0, game.board_size)): self._draw_board_line(i, game.pieces, game.board_size) self._draw_bottom_line(game.board_size)
+for i in reversed(range(0, game.board_size)): 
+self._draw_board_line(i, game.pieces, game.board_size) self._draw_bottom_line(game.board_size)
 
 ## :To encapsulate a chess player.
 
