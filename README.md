@@ -9,16 +9,27 @@ enums, data types, and constants
 Steps Required:
 
 :encapsulate a cell on chess board.
+
 :encapsulate common functionality of all chess pieces.
+
 :To encapsulate King as a chess piece.
-:To encapsulate Queen as a chess piece
+
+:To encapsulate Queen as a chess piece.
+
 :To encapsulate Knight as a chess piece.
+
 :To encapsulate Rook as a chess piece.
+
 :To encapsulate Bishop as a chess piece.
+
 :To encapsulate Pawn as a chess piece.
+
 :To encapsulate a chess move.
+
 :To encapsulate a chess game.
+
 :To encapsulate a chess render.
+
 :To encapsulate a chess player.
 
 from .render import ConsoleRender from .game import ChessGame
