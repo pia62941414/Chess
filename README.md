@@ -9,7 +9,7 @@ Two players should be able to play chess online on the system. There will be adh
 
 Steps Required (All files are upload seperately)--------------------
 
-# :enums, data types, and constants
+## :enums, data types, and constants
 
 #### from copy import deepcopy from .pieces import Piece, PieceFactory from .moves import ChessPosition, MoveCommand from .constants import CHESS_BOARD_SIZE, INITIAL_PIECE_SET_SINGLE, PieceType
 
